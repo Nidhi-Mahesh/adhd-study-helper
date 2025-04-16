@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Focus Board</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <section id="pomodoro">
+      <div id="timer">25:00</div>
+      <button id="start">Start</button>
+      <div id="tree-growth"></div>
+    </section>
+
+    <section id="tools">
+      <textarea id="sticky-note" placeholder="Sticky note..."></textarea>
+
+      <canvas id="draw-note" width="200" height="200"></canvas>
+
+      <div id="voice-note">
+        <button id="record">🎙 Record</button>
+        <audio id="audio-player" controls></audio>
+      </div>
+
+      <div id="distraction-box">
+        <button id="toggle-distract">Thoughts</button>
+        <textarea id="distract-note" placeholder="Distracting thought..."></textarea>
+      </div>
+
+      <div id="todo-list">
+        <input type="text" id="todo-input" placeholder="Add todo"/>
+        <ul id="todos"></ul>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

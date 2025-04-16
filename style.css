@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    background: #1a1a1a;
+    color: #ccc;
+    font-family: 'Courier New', monospace;
+    image-rendering: pixelated;
+  }
+  
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  #tools textarea,
+  #todo-input,
+  #draw-note,
+  #voice-note,
+  #distraction-box textarea {
+    background: #222;
+    border: 1px solid #555;
+    color: #eee;
+    padding: 5px;
+    font-size: 14px;
+    resize: none;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  #distraction-box textarea {
+    display: none;
+  }
+  
+  button {
+    background: #333;
+    color: #eee;
+    border: 1px solid #555;
+    padding: 4px 8px;
+    cursor: pointer;
+  }
+  
+  ul#todos {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  ul#todos li {
+    border-bottom: 1px dashed #555;
+  }
+  
